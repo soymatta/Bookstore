@@ -1,0 +1,118 @@
+{% extends 'layout.html'%} {% block content %}
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+  <a
+    href="/"
+    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+  >
+    <svg class="bi me-2" width="40" height="32">
+      <use xlink:href="#bootstrap" />
+    </svg>
+    <span class="fs-4">Bookstore</span>
+  </a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a href="#home" class="nav-link active" aria-current="page">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#features_books" class="nav-link">Features</a>
+    </li>
+    <li class="nav-item">
+      <a href="#bestSeller_books" class="nav-link">Best Seller</a>
+    </li>
+    <li class="nav-item">
+      <a href="#books_categories" class="nav-link">Categories</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container col-xxl-8 px-4 py-5" id="home">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="../static/src/library_pic.jpg"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Foto de Abby Chung: https://www.pexels.com/es-es/foto/mujer-vestida-con-camisa-marron-con-bolso-de-cuero-negro-en-la-parte-delantera-de-los-libros-de-la-biblioteca-1106468/"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Bookstore</h1>
+      <p class="lead">
+        This project uses different tools.<br />
+        For the frontend I use
+        <a href="https://getbootstrap.com/">Bootstrap</a>, for the backend
+        <a href="https://flask.palletsprojects.com/">Python Flask</a> and we
+        also use <a href="https://developers.notion.com/">Notion API</a>.
+      </p>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+          Go to shop!
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+          Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container col-xxl-8 px-4 py-5" id="features_books">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Features</h2>
+      <p class="lead">That are the feature books:</p>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="../static/src/library_pic.jpg"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Foto de Abby Chung: https://www.pexels.com/es-es/foto/mujer-vestida-con-camisa-marron-con-bolso-de-cuero-negro-en-la-parte-delantera-de-los-libros-de-la-biblioteca-1106468/"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container col-xxl-8 px-4 py-5" id="bestSeller_books">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="../static/src/library_pic.jpg"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Foto de Abby Chung: https://www.pexels.com/es-es/foto/mujer-vestida-con-camisa-marron-con-bolso-de-cuero-negro-en-la-parte-delantera-de-los-libros-de-la-biblioteca-1106468/"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        Best Sellers
+      </h2>
+      <p class="lead">Best Sellers Books</p>
+    </div>
+  </div>
+</div>
+<div class="container col-xxl-8 px-4 py-5" id="books_categories">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Categories</h2>
+      <p class="lead">Books Categories</p>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="../static/src/library_pic.jpg"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Foto de Abby Chung: https://www.pexels.com/es-es/foto/mujer-vestida-con-camisa-marron-con-bolso-de-cuero-negro-en-la-parte-delantera-de-los-libros-de-la-biblioteca-1106468/"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+{% endblock %}
