@@ -1,0 +1,50 @@
+{% extends 'layout.html'%} {% block content %}
+<h2>Latest additions</h2>
+<div class="container">
+  <div class="row">
+    <a href="/" class="col-3 book_container">
+      <img src="../static/src/book1.jpg" alt="book1" class="book" />
+    </a>
+    <a href="/" class="col-3 book_container">
+      <img src="../static/src/book2.jpg" alt="book1" class="book" />
+    </a>
+    <a href="/" class="col-3 book_container">
+      <img src="../static/src/book1.jpg" alt="book1" class="book" />
+    </a>
+    <a href="/" class="col-3 book_container">
+      <img src="../static/src/book2.jpg" alt="book1" class="book" />
+    </a>
+  </div>
+</div>
+<h1>Search your book</h1>
+<div class="dropdown">
+  <button
+    class="btn btn-secondary dropdown-toggle"
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<h2>Request a book</h2>
+
+{% endblock %}

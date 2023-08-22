@@ -6,9 +6,17 @@ app = Flask(__name__)
 def home():
     return render_template("index.html") 
 
-@app.route("/features")
+@app.route("/shopping_page")
 def features():
-    return render_template("features.html") 
+    return render_template("shopping_page.html") 
+
+@app.route("/cart")
+def features():
+    return render_template("shopping_cart_page.html") 
+
+@app.route("/admin")
+def features():
+    return render_template("admin_page.html") 
 
 if __name__ == "__main__":
     app.run(debug=True)
