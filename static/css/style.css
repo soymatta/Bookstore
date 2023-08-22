@@ -1,0 +1,20 @@
+body {
+  padding: 10px;
+}
+header {
+  background-color: rgba(245, 244, 246, 0.95);
+}
+
+.book_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book {
+  transform: scale(95%);
+  transition: transform 0.1s ease-in-out;
+  width: 100%;
+}
+.book:hover {
+  transform: scale(100%);
+}
