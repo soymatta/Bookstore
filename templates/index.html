@@ -1,5 +1,7 @@
 {% extends 'layout.html'%} {% block content %}
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+<header
+  class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top"
+>
   <a
     href="/"
     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -43,17 +45,25 @@
         This project uses different tools.<br />
         For the frontend I use
         <a href="https://getbootstrap.com/">Bootstrap</a>, for the backend
-        <a href="https://flask.palletsprojects.com/">Python Flask</a> and we
-        also use <a href="https://developers.notion.com/">Notion API</a>.
+        <a href="https://flask.palletsprojects.com/">Flask</a>,
+        <a href="https://www.mysql.com/">MySQL</a>and also an
+        <a href="https://developers.notion.com/">Notion API</a> and like hosting
+        i use <a href="https://www.heroku.com/">Heroku</a>.
       </p>
 
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-          Go to shop!
-        </button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-          Cart
-        </button>
+        <p>
+          <a class="btn btn-primary btn-lg px-4 me-md-2" href="/shopping_page"
+            >Go to shop!</a
+          >
+        </p>
+        <p>
+          <a
+            class="btn btn-outline-secondary btn-lg px-4 me-md-2"
+            href="/shopping_page"
+            >Cart</a
+          >
+        </p>
       </div>
     </div>
   </div>
