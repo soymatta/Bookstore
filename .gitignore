@@ -1,0 +1,10 @@
+# Ignorar archivos de entorno virtual de venv
+venv/
+
+# Ignorar cualquier archivo de caché de Python
+__pycache__/
+
+# Ignorar el archivo de registro de dependencias
+requirements.txt
+
+# Otros archivos y directorios que quieras ignorar
