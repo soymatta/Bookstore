@@ -14,6 +14,10 @@ def shopping():
 def cart():
     return render_template("shopping_cart_page.html") 
 
+@app.route("/login_page")
+def login():
+    return render_template("login_page.html") 
+
 @app.route("/admin")
 def admin():
     return render_template("admin_page.html") 
