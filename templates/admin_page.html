@@ -1,0 +1,96 @@
+{% extends 'layout.html'%} {% block content %}
+<div class="container col-xl-10 col-xxl-8 px-8">
+  <div class="row align-items-center g-lg-5">
+    <div class="col-lg-7">
+      <form class="p-4 p-md-5 border rounded-3 bg-light">
+        <div class="form-floating mb-3">
+          <h1 class="display-8 fw-bold lh-1 mb-3">Books panels</h1>
+        </div>
+        <div class="form-floating mb-3">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">Add</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">Modify</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3">Delete</label>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="book_id"
+            placeholder="name@example.com"
+          />
+          <label for="book_id">Book ID</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="book_description"
+            placeholder=""
+          />
+          <label for="book_description">Book description</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="book_authors"
+            placeholder="name@example.com"
+          />
+          <label for="book_authors">Book authors</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="book_tags"
+            placeholder=""
+          />
+          <label for="book_tags">Book tags</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Submit
+        </button>
+        <hr class="my-4" />
+        <small class="text-muted">Form mistakes:</small>
+      </form>
+    </div>
+
+    <div class="col-md-10 mx-auto col-lg-5">
+      <img
+        class="rounded-3"
+        src="../static/src/book1.jpg"
+        alt=""
+        height="516"
+      />
+    </div>
+  </div>
+</div>
+
+{% endblock %}
