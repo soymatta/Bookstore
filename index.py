@@ -7,15 +7,15 @@ def home():
     return render_template("index.html") 
 
 @app.route("/shopping_page")
-def features():
+def shopping():
     return render_template("shopping_page.html") 
 
 @app.route("/cart")
-def features():
+def cart():
     return render_template("shopping_cart_page.html") 
 
 @app.route("/admin")
-def features():
+def admin():
     return render_template("admin_page.html") 
 
 if __name__ == "__main__":
