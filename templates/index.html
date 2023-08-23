@@ -1,31 +1,4 @@
 {% extends 'layout.html'%} {% block content %}
-<header
-  class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom sticky-top"
->
-  <a
-    href="/"
-    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-  >
-    <svg class="bi me-2" width="40" height="32">
-      <use xlink:href="#bootstrap" />
-    </svg>
-    <span class="fs-4">Bookstore</span>
-  </a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a href="#home" class="nav-link active" aria-current="page">Home</a>
-    </li>
-    <li class="nav-item">
-      <a href="#features_books" class="nav-link">Features</a>
-    </li>
-    <li class="nav-item">
-      <a href="#bestSeller_books" class="nav-link">Best Seller</a>
-    </li>
-    <li class="nav-item">
-      <a href="#books_categories" class="nav-link">Categories</a>
-    </li>
-  </ul>
-</header>
 
 <div class="container col-xxl-8 px-4 py-5" id="home">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -58,9 +31,7 @@
           >
         </p>
         <p>
-          <a
-            class="btn btn-outline-secondary btn-lg px-4 me-md-2"
-            href="/shopping_page"
+          <a class="btn btn-outline-secondary btn-lg px-4 me-md-2" href="/cart"
             >Cart</a
           >
         </p>
