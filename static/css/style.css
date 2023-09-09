@@ -1,7 +1,4 @@
-header {
-  background-color: rgba(245, 244, 246, 0.95);
-}
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 .book_container {
   display: flex;
   justify-content: center;
@@ -15,14 +12,10 @@ header {
 .book:hover {
   transform: scale(100%);
 }
-
-#center_horizontal {
-  display: flex;
-  justify-content: center;
+section {
+  margin: 0 20px;
 }
-
-#center_horizontal img {
-  border-radius: 10px;
-  margin: 10px;
-  width: 100px;
+.counter_books_elements {
+  width: 3rem;
+  margin: 3px;
 }

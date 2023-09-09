@@ -1,50 +1,81 @@
 {% extends 'layout.html'%} {% block content %}
-<h2>Latest additions</h2>
-<div class="container">
-  <div class="row">
-    <a href="/" class="col-3 book_container">
-      <img src="../static/src/book1.jpg" alt="book1" class="book" />
-    </a>
-    <a href="/" class="col-3 book_container">
-      <img src="../static/src/book2.jpg" alt="book1" class="book" />
-    </a>
-    <a href="/" class="col-3 book_container">
-      <img src="../static/src/book1.jpg" alt="book1" class="book" />
-    </a>
-    <a href="/" class="col-3 book_container">
-      <img src="../static/src/book2.jpg" alt="book1" class="book" />
-    </a>
-  </div>
-</div>
-<h1>Search your book</h1>
-<div class="dropdown">
-  <button
-    class="btn btn-secondary dropdown-toggle"
-    type="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    Dropdown button
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-<nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <form class="d-flex" role="search">
-      <input
-        class="form-control me-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<h2>Request a book</h2>
 
+<section id="best-seller mx-3">
+  <h2>Welcome</h2>
+  <div class="container px-8">
+    <div class="row align-items-center">
+      <div class="col-6 d-flex justify-content-center">
+        <img
+          class="rounded-3 my-5 shadow"
+          src="../static/src/book1.jpg"
+          alt=""
+          height="384"
+        />
+      </div>
+
+      <div class="col-6">
+        <h3>Book name</h3>
+        <p>Authors: <br />Author 1, Author 2</p>
+        <p>
+          Descripcion about the book. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Asperiores mollitia dolor fugiat assumenda alias,
+          officiis commodi, obcaecati dolores repellendus
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="last_aditions">
+  <h2>Latest additions</h2>
+  <div class="container">
+    <div class="row">
+      <a href="/" class="col-3">
+        <img
+          src="../static/src/book1.jpg"
+          alt="Book 1"
+          class="book rounded-3"
+        />
+      </a>
+      <a href="/" class="col-3">
+        <img
+          src="../static/src/book2.jpg"
+          alt="Book 2"
+          class="book rounded-3"
+        />
+      </a>
+      <a href="/" class="col-3">
+        <img
+          src="../static/src/book1.jpg"
+          alt="Book 1"
+          class="book rounded-3"
+        />
+      </a>
+      <a href="/" class="col-3">
+        <img
+          src="../static/src/book2.jpg"
+          alt="Book 2"
+          class="book rounded-3"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+<section id="explore">
+  <h2>Browse by genre</h2>
+  <button type="button" class="btn btn-info">Category 1</button>
+  <button type="button" class="btn btn-info">Category 3</button>
+  <button type="button" class="btn btn-info">Category 2</button>
+  <button type="button" class="btn btn-info">Category 4</button>
+  <button type="button" class="btn btn-info">Category 1</button>
+  <button type="button" class="btn btn-info">Category 3</button>
+  <button type="button" class="btn btn-info">Category 2</button>
+  <button type="button" class="btn btn-info">Category 4</button>
+</section>
+<section id="request">
+  <p>
+    Your book is not in the bookstore, you can order it and we will get it for
+    you.
+  </p>
+</section>
 {% endblock %}
